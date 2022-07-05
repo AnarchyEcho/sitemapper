@@ -1,0 +1,29 @@
+{
+  "name": "sitemapper",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Andre Hagen",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.31",
+    "@types/sitemap-generator": "^8.5.1",
+    "@typescript-eslint/eslint-plugin": "^5.22.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "dotenv": "^16.0.1",
+    "eslint": "^8.14.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "express": "^4.18.1",
+    "nodemon": "^2.0.18",
+    "sitemap-generator": "^8.5.1",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "start": "ts-node ./server/server.ts",
+    "dev": "nodemon",
+    "build": "tsc -p ."
+  }
+}
